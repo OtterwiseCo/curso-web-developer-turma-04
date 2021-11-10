@@ -27,3 +27,11 @@ Serve para trocar de branches ou também criar uma nova branch
 
 `git checkout -b <nome-da-branch>` cria uma nova branch
 `git checkout <nome-da-branch>` para para outra branch
+
+## git fetch
+
+Sincroniza o repositório local com o remoto
+
+## git pull
+
+Puxa as alterações do repositório remoto pro repositório local
