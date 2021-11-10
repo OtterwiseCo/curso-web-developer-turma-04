@@ -11,3 +11,7 @@ Mostra o status atual dos arquivos comparando com o repositório remoto
 ## git add
 
 Adiciona arquivos pra ser commitados
+
+## git commit
+
+Criar um checkpoint de versão
