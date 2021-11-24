@@ -1,0 +1,11 @@
+{
+  "name": "estudo-de-caso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "console-input": "^1.0.2",
+    "node-fetch": "^3.1.0"
+  }
+}
