@@ -1,0 +1,160 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: "Roboto";
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background-image: url('./images/header-bg.png');
+    height: 100vh;
+    background-position: right top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    background-size: 1024px;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.navbar .container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-links .link {
+    margin-right: 60px;
+}
+
+.navbar .navbar-links .link__no-margin {
+    margin: 0;
+}
+
+.intro {
+    max-width: 50%;
+}
+
+.intro .intro-title {
+    font-size: 50px;
+    font-weight: 500;
+    color: #091133;
+}
+
+.intro .intro-description {
+    color: #505F98;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 69px;
+}
+
+.intro .button__primary {
+    margin-right: 30px;
+}
+
+.woman-cellphone {
+    padding: 110px 0;
+}
+
+.woman-cellphone-content {
+    flex: 1
+}
+
+.woman-cellphone-content__right {
+    margin-left: 15px;
+}
+
+.woman-cellphone-content__left {
+    margin-right: 15px;
+}
+
+.woman-cellphone .container {
+    display: flex;
+    align-items: center;
+}
+
+.woman-cellphone .woman-cellphone-title {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #091133;
+}
+
+.woman-cellphone .woman-cellphone-description {
+    font-size: 16px;
+    line-height: 26px;
+    color: #6F7CB2;
+    margin-bottom: 80px;
+}
+
+.woman-cellphone-skill {
+    margin-right: 30px;
+}
+
+.woman-cellphone-skill__no-margin {
+    margin: 0;
+}
+
+.woman-cellphone-skill .woman-cellphone-skill-title {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+
+.woman-cellphone-skill .woman-cellphone-skill-description {
+    color: #5D6970;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* CSS específicos de elementos */
+
+.button {
+    border: none;
+    padding: 5px 0;
+    min-width: 189px;
+    font-size: 16px;
+    line-height: 26px;
+    border-radius: 2px;
+}
+
+.button__primary {
+    background-color: #111B47;
+    color: white;
+}
+
+.button__outline {
+    background-color: transparent;
+    border: 2px solid #091133;
+}
+
+.link {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #505F98;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 38px;
+    color: #37447E;
+}
+
+.flex {
+    display: flex;
+}
