@@ -1,0 +1,32 @@
+.container {
+    width: 800px;
+    margin: auto;
+}
+
+.container p {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .container p {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1200px) { 
+    .container p {
+        font-size: 22px;
+    }
+}
+
+/* BREAKPOINTS MAIS UTILIZADOS */
+
+@media (min-width: 576px) { } /* celulares em landscape */
+
+@media (min-width: 768px) { } /* tablets */
+
+@media (min-width: 992px) { } /* desktop */
+
+@media (min-width: 1200px) { } /* desktop LARGES */
