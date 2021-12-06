@@ -1,0 +1,33 @@
+div {
+    /* height: 200px;
+    width: 200px; */
+    background-color: aqua;
+}
+
+#alert {
+    padding: 10px;
+}
+
+div:hover {
+    background-color: blueviolet;
+}
+
+div:empty {
+    display: none;
+}
+
+button:disabled {
+    background-color: brown;
+}
+
+.list li:first-child {
+    font-size: 4rem;
+}
+
+.list li:last-child {
+    font-size: 4rem;
+}
+
+.list li:nth-child(2n+1) {
+    font-size: 4rem;
+}
