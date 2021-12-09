@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    background-color: $backgroundColor;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar {
+    padding: 18px 16px;
+    border-bottom: 1px solid #26292D;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: $backgroundColor;
+    &-links {
+        display: none;
+    }
+
+    @media (min-width: 992px) {
+        &-links {
+            display: flex;
+        }
+        .burger-button {
+            display: none;
+        }
+        &-link {
+            color: white;
+            margin-right: 23px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 8px 0;
+            position: relative;
+            &:hover {
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $primaryColor;
+                    height: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    padding: 0 16px;
+    &__border {
+        border-top: 1px solid $grayBorder;
+        border-bottom: 1px solid $grayBorder;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 0;
+        @media (min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &-column {
+        text-align: center;
+        @media (min-width: 992px) {
+            text-align: left;
+        }
+        &-name {
+            color: $acento;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 500;
+            letter-spacing: 0.15px;
+            @media (min-width: 992px) {
+                margin-bottom: 24px;
+            }
+        }
+
+        &-link {
+            font-size: 14px;
+            color: white;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-decoration: none;
+        }
+    }
+
+    &-copy {
+        &-text {
+            color: white;
+            text-align: center;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+// classes genéricas
+
+.button {
+    border-radius: 5px;
+    height: 48px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+
+    &__solid {
+        background-color: $primaryColor;
+        padding-left: 15.5px;
+        padding-right: 15.5px;
+    }
+
+    &__outlined {
+        border: 1px solid white;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+    }
+
+    &-text {
+        &__mr-left {
+            margin-left: 8px;
+        }
+
+        &__mr-right {
+            margin-right: 8px;
+        }
+    }
+}
+
+.container {
+    max-width: 1156px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}

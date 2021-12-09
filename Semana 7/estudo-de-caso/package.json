@@ -1,8 +1,7 @@
 {
   "name": "estudo-de-caso",
-  "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel ./src/*.html",
     "build": "parcel build"
   },
   "version": "1.0.0",

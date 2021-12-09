@@ -1,0 +1,98 @@
+@import '_variables', '_styles';
+
+.my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    @media (min-width: 992px) {
+        height: 90vh;
+    }
+    &-title {
+       color: white;
+       font-size: 34px;
+       line-height: 40px;
+       font-weight: 500;
+       text-align: center;
+       max-width: 265px;
+       margin-bottom: 24px;
+       @media (min-width: 992px) {
+           font-size: 60px;
+           line-height: 71px;
+           max-width: 524px;
+           margin-bottom: 32px;
+       }
+       &-name {
+           color: $primaryColor;
+       }
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+    }
+
+    .button__solid {
+        margin-bottom: 16px;
+        @media (min-width: 992px) {
+            margin-bottom: 0;
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.about {
+    padding: 0 16px 64px 16px;
+
+    &-card {
+        display: flex;
+        padding: 16px;
+        border-radius: 8px;
+        background-color: $colorRellenos;
+        color: white;
+        flex-direction: column;
+        max-width: 967px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+        }
+
+        &-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-height: 365px;
+
+            @media (min-width: 992px) {
+                margin-right: 32px;
+                max-width: 326px;
+            }
+        }
+
+        &-title {
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 32px;
+            @media (min-width: 992px) {
+                font-size: 48px;
+                line-height: 57px;
+                margin-top: 0;
+            }
+        }
+
+        &-description {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.44px;
+        }
+    }
+}
