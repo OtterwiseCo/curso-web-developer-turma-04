@@ -1,0 +1,15 @@
+.button {
+    border: none;
+    background: aquamarine;
+}
+
+.button__solid {
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.button__outlined {
+    background: transparent;
+    color: black;
+}
