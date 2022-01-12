@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+button {
+  border: none;
+  margin-bottom: 5px;
+  background-color: darkmagenta;
+  color: white;
+  padding: 10px;
+  min-width: 100px;
+}
