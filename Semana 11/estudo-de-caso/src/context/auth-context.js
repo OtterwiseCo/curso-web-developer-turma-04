@@ -6,7 +6,8 @@ import { authProvider } from "../providers/auth";
 const AuthContext = createContext(null);
 
 export const AuthProvider = (props) => {
-  const [user, setUser] = useState(null);
+  const userStored = localStorage.getItem("user");
+  const [user, setUser] = useState(userStored ? JSON.parse(userStored) : null);
 
   const login = (data, callback) => {
     authProvider.signin(data, (user) => {
