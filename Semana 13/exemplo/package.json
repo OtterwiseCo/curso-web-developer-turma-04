@@ -1,0 +1,17 @@
+{
+  "name": "exemplo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.8.1",
+    "fastify": "^3.27.0"
+  },
+  "devDependencies": {
+    "prisma": "^3.8.1"
+  }
+}
