@@ -1,0 +1,22 @@
+{
+  "name": "estudo-de-caso",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.9.1",
+    "fastify": "^3.27.1",
+    "fastify-helmet": "^7.0.1",
+    "fastify-multer": "^2.0.2",
+    "fastify-static": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "prisma": "^3.9.1"
+  }
+}
