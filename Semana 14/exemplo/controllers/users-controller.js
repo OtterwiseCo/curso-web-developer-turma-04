@@ -2,7 +2,10 @@ import { prisma } from "../helpers/utils.js";
 
 export const index = async (req, reply) => {
   const { orderBy } = req.query;
-  const [field, value] = orderBy.split(".");
+  let order;
+  if (orderBy) {
+    order = orderBy.split(".");
+  }
   try {
     const allUsers = await prisma.user.findMany({
       where: {
@@ -10,14 +13,17 @@ export const index = async (req, reply) => {
           contains: "gmail.com",
         },
       },
-      orderBy: [
-        {
-          [field]: value,
-        },
-      ],
+      orderBy: orderBy
+        ? [
+            {
+              [order[0]]: order[1],
+            },
+          ]
+        : [],
     });
     return allUsers;
   } catch (error) {
+    console.log(error);
     reply.status(500).send("Internal Server Error");
   }
 };
